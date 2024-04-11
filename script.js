@@ -14,7 +14,6 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");
         }
     });
-    
 
     // slide-up script
     $('.scroll-up-btn').click(function(){
@@ -59,88 +58,3 @@ $(document).ready(function(){
         }
     });
 });
-
-let AllDivs = document.querySelectorAll('.language-section');
-const centerDivs = ()=>{
-  let windowH = window.innerHeight;
-
-  AllDivs.forEach((item)=>{
-    let top = item.getBoundingClientRect().top;
-    if(top<windowH){
-      item.classList.add('active');
-    }
-  })
-}
-centerDivs();
-window.addEventListener('scroll',centerDivs);
-
-let Divs = document.querySelectorAll('.left-content');
-const Divss = ()=>{
-  let windowH = window.innerHeight;
-
-  Divs.forEach((item)=>{
-    let top = item.getBoundingClientRect().top;
-    if(top<windowH){
-      item.classList.add('active');
-    }
-  })
-}
-Divss();
-window.addEventListener('scroll',Divss);
-
-let divs = document.querySelectorAll('.right-content');
-const divss = ()=>{
-  let windowH = window.innerHeight;
-
-  divs.forEach((item)=>{
-    let top = item.getBoundingClientRect().top;
-    if(top<windowH){
-      item.classList.add('active');
-    }
-  })
-}
-divss();
-window.addEventListener('scroll',divss);
-
-let project = document.querySelectorAll('.projects-content');
-const projects = ()=>{
-  let windowH = window.innerHeight;
-
-  project.forEach((item)=>{
-    let top = item.getBoundingClientRect().top;
-    if(top<windowH){
-      item.classList.add('active');
-    }
-  })
-}
-projects();
-window.addEventListener('scroll',projects);
-
-let contact = document.querySelectorAll('.left-column');
-const contacts = ()=>{
-  let windowH = window.innerHeight;
-
-  contact.forEach((item)=>{
-    let top = item.getBoundingClientRect().top;
-    if(top<windowH){
-      item.classList.add('active');
-    }
-  })
-}
-contacts();
-window.addEventListener('scroll',contacts);
-
-let right = document.querySelectorAll('.right-column');
-const rights = ()=>{
-  let windowH = window.innerHeight;
-
-  right.forEach((item)=>{
-    let top = item.getBoundingClientRect().top;
-    if(top<windowH){
-      item.classList.add('active');
-    }
-  })
-}
-rights();
-window.addEventListener('scroll',rights);
-
